@@ -1,6 +1,6 @@
 using System;
 
-namespace PlatformService
+namespace AssetService
 {
     public class WeatherForecast
     {

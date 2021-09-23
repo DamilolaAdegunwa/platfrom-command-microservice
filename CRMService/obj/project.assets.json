@@ -6044,11 +6044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\PlatformService\\PlatformService.csproj",
+      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\damil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\PlatformService\\obj\\",
+      "outputPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

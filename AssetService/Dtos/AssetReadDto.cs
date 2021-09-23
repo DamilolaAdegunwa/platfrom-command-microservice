@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlatformService.Dtos
+namespace AssetService.Dtos
 {
-    public class PlatformReadDto
+    public class AssetReadDto
     {
         public int Id { get; set; }
 

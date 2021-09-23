@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o0S/NiVO4e1wMQrjB3ojRYNNB1sAN0l4LPnmi9XiQs/68sVHWcXuWilIUUlCOYREJmh3Z9OS8QjvnKAj4JIL7w==",
+  "dgSpecHash": "tj94bHHJPlb6lWcf5f/TvtjunEmmh57X9Z+yIOUeCGpaupTTMVShVTwriQsOrnQd4IibCXcoIF0H4w0BpxSwPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\PlatformService\\PlatformService.csproj",
+  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\PlatformService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damil\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\damil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

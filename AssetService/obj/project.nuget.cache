@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lleGM16PuxaoDRjTGhJXfJky0FsonZRLxFkt1J5lO5XjqKObQ8oRL4BKB7qJ1i2caw6AaAJGOiNtulgsgH+r3w==",
+  "dgSpecHash": "9Jc6yfGAgrZjQdtBh8Hp5vZGCy/+Z7zNxyOgQh13L6wYnWox8ByslPw0OdIOWyTKFCLnXB3pC3y22zIjB/OcZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\PlatformService.csproj",
+  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\AssetService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damil\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\damil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

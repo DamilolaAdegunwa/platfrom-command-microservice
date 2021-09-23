@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PlatformService.Models;
-namespace PlatformService.Data
+using AssetService.Models;
+namespace AssetService.Data
 {
     public static class PrepDb
     {
@@ -18,17 +18,17 @@ namespace PlatformService.Data
         }
         public static void SeedData(AppDbContext context)
         {
-            if(!context.Platforms.Any())
+            if(!context.Assets.Any())
             {
                 Console.WriteLine("Seeding data");
                 context.AddRange(
-                new List<Platform>(){
-                    new Platform(){Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Entity Framework", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Kubernetes", Publisher = "Cloud Native cloud Foundation", Cost = "Free"},
-                    new Platform(){Name = "GCP", Publisher = "Google", Cost = "Free"},
-                    new Platform(){Name = "F8", Publisher = "Facebook", Cost = "Free"},
-                    new Platform(){Name = "Oracle cloud", Publisher = "Oracle", Cost = "Free"},
+                new List<Asset>(){
+                    new Asset(){Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
+                    new Asset(){Name = "Entity Framework", Publisher = "Microsoft", Cost = "Free"},
+                    new Asset(){Name = "Kubernetes", Publisher = "Cloud Native cloud Foundation", Cost = "Free"},
+                    new Asset(){Name = "GCP", Publisher = "Google", Cost = "Free"},
+                    new Asset(){Name = "F8", Publisher = "Facebook", Cost = "Free"},
+                    new Asset(){Name = "Oracle cloud", Publisher = "Oracle", Cost = "Free"},
                 }
                 );
             }

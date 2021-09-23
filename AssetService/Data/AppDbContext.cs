@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PlatformService.Models;
-namespace PlatformService.Data
+using AssetService.Models;
+namespace AssetService.Data
 {
     public class AppDbContext : DbContext
     {
@@ -12,6 +12,6 @@ namespace PlatformService.Data
         {
 
         }
-        public DbSet<Platform> Platforms { get; set; }
+        public DbSet<Asset> Assets { get; set; }
     }
 }

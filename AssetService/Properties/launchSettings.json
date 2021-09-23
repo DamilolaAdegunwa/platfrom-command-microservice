@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "PlatformService": {
+    "AssetService": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

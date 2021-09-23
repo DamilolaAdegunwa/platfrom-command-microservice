@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-namespace PlatformService.Models
+
+namespace AssetService.Dtos
 {
-    public class Platform
+    public class AssetCreateDto
     {
-        [Key]
-        [Required]
-        public int Id { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Required]
+
         public string Publisher { get; set; }
-        [Required]
+
         public string Cost { get; set; }
     }
 }

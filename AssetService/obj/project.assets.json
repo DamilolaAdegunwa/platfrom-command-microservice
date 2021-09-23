@@ -6044,9 +6044,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\PlatformService.csproj",
-      "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\PlatformService.csproj",
+      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\AssetService.csproj",
+      "projectName": "AssetService",
+      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\AssetService.csproj",
       "packagesPath": "C:\\Users\\damil\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\AssetService\\obj\\",
       "projectStyle": "PackageReference",
