@@ -61,3 +61,4 @@ C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\ref\AssetService.dll
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.pdb
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.genruntimeconfig.cache
+C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.csproj.AssemblyReference.cache
