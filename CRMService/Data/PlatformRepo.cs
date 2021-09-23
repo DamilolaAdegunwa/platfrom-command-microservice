@@ -1,38 +1,38 @@
-﻿using PlatformService.Dtos;
-using PlatformService.Models;
+﻿using CRMService.Dtos;
+using CRMService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlatformService.Data
+namespace CRMService.Data
 {
-    public class PlatformRepo : IPlatformRepo
+    public class CRMRepo : ICRMRepo
     {
         private readonly AppDbContext _context;
-        public PlatformRepo(AppDbContext context)
+        public CRMRepo(AppDbContext context)
         {
             _context = context;
         }
-        public Platform CreatePlatform(Platform platform)
+        public CRM CreateCRM(CRM CRM)
         {
-            if(platform == null)
+            if(CRM == null)
             {
-                throw new ArgumentNullException(nameof(platform), "you cannot null into the db!");
+                throw new ArgumentNullException(nameof(CRM), "you cannot null into the db!");
             }
-            var p = _context.Add<Platform>(platform);
+            var p = _context.Add<CRM>(CRM);
 
             return p.Entity;
         }
 
-        public Platform GetPlatformById(int id)
+        public CRM GetCRMById(int id)
         {
-            return _context.Platforms.FirstOrDefault(a => a.Id == id);
+            return _context.CRMs.FirstOrDefault(a => a.Id == id);
         }
 
-        public IEnumerable<Platform> GetPlatforms()
+        public IEnumerable<CRM> GetCRMs()
         {
-            return _context.Platforms.ToList();
+            return _context.CRMs.ToList();
         }
 
         public bool SaveChanges()

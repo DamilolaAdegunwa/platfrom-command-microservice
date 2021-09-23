@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PlatformService.Models;
-namespace PlatformService.Data
+using CRMService.Models;
+namespace CRMService.Data
 {
     public static class PrepDb
     {
@@ -18,17 +18,17 @@ namespace PlatformService.Data
         }
         public static void SeedData(AppDbContext context)
         {
-            if(!context.Platforms.Any())
+            if(!context.CRMs.Any())
             {
                 Console.WriteLine("Seeding data");
                 context.AddRange(
-                new List<Platform>(){
-                    new Platform(){Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Entity Framework", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Kubernetes", Publisher = "Cloud Native cloud Foundation", Cost = "Free"},
-                    new Platform(){Name = "GCP", Publisher = "Google", Cost = "Free"},
-                    new Platform(){Name = "F8", Publisher = "Facebook", Cost = "Free"},
-                    new Platform(){Name = "Oracle cloud", Publisher = "Oracle", Cost = "Free"},
+                new List<CRM>(){
+                    new CRM(){Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
+                    new CRM(){Name = "Entity Framework", Publisher = "Microsoft", Cost = "Free"},
+                    new CRM(){Name = "Kubernetes", Publisher = "Cloud Native cloud Foundation", Cost = "Free"},
+                    new CRM(){Name = "GCP", Publisher = "Google", Cost = "Free"},
+                    new CRM(){Name = "F8", Publisher = "Facebook", Cost = "Free"},
+                    new CRM(){Name = "Oracle cloud", Publisher = "Oracle", Cost = "Free"},
                 }
                 );
             }

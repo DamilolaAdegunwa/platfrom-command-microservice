@@ -6044,9 +6044,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\PlatformService.csproj",
-      "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\PlatformService.csproj",
+      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\CRMService.csproj",
+      "projectName": "CRMService",
+      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\CRMService.csproj",
       "packagesPath": "C:\\Users\\damil\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\CRMService\\obj\\",
       "projectStyle": "PackageReference",

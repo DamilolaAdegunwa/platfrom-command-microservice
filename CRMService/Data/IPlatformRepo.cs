@@ -1,17 +1,17 @@
-﻿using PlatformService.Dtos;
-using PlatformService.Models;
+﻿using CRMService.Dtos;
+using CRMService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlatformService.Data
+namespace CRMService.Data
 {
-    public interface IPlatformRepo
+    public interface ICRMRepo
     {
         bool SaveChanges();
-        IEnumerable<Platform> GetPlatforms();
-        Platform GetPlatformById(int id);
-        Platform CreatePlatform(Platform platform);
+        IEnumerable<CRM> GetCRMs();
+        CRM GetCRMById(int id);
+        CRM CreateCRM(CRM CRM);
     }
 }

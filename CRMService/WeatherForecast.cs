@@ -1,6 +1,6 @@
 using System;
 
-namespace PlatformService
+namespace CRMService
 {
     public class WeatherForecast
     {

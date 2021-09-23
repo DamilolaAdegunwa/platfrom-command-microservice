@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlatformService.Controllers
+namespace CRMService.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "PlatformService": {
+    "CRMService": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

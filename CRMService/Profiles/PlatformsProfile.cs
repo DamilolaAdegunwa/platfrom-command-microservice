@@ -1,20 +1,20 @@
 ﻿using AutoMapper;
-using PlatformService.Dtos;
-using PlatformService.Models;
+using CRMService.Dtos;
+using CRMService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlatformService.Profiles
+namespace CRMService.Profiles
 {
-    public class PlatformsProfile : Profile
+    public class CRMsProfile : Profile
     {
-        public PlatformsProfile()
+        public CRMsProfile()
         {
             //Source --> Target
-            CreateMap<Platform, PlatformReadDto>();
-            CreateMap<PlatformCreateDto, Platform>();
+            CreateMap<CRM, CRMReadDto>();
+            CreateMap<CRMCreateDto, CRM>();
         }
     }
 }

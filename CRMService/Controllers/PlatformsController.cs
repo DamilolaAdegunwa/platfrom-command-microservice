@@ -3,23 +3,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PlatformService.Dtos;
-using PlatformService.Data;
-using PlatformService.Models;
+using CRMService.Dtos;
+using CRMService.Data;
+using CRMService.Models;
 using AutoMapper;
 
-namespace PlatformService.Controllers
+namespace CRMService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PlatformsController : Controller
+    public class CRMsController : Controller
     {
-        private readonly IPlatformRepo _platformRepo;
+        private readonly ICRMRepo _CRMRepo;
         private readonly IMapper _mapper;
 
-        public PlatformsController(IPlatformRepo platformRepo, IMapper mapper)
+        public CRMsController(ICRMRepo CRMRepo, IMapper mapper)
         {
-            _platformRepo = platformRepo;
+            _CRMRepo = CRMRepo;
             _mapper = mapper;
         }
         //public IActionResult Index()
@@ -28,29 +28,29 @@ namespace PlatformService.Controllers
         //}
 
         [HttpGet]
-        public ActionResult<IEnumerable<PlatformReadDto>> GetPlatforms()
+        public ActionResult<IEnumerable<CRMReadDto>> GetCRMs()
         {
-            var platforms = _platformRepo.GetPlatforms();
-            return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
+            var CRMs = _CRMRepo.GetCRMs();
+            return Ok(_mapper.Map<IEnumerable<CRMReadDto>>(CRMs));
         }
 
         [HttpGet("{id}", Name = "[action]")]
-        public ActionResult<PlatformReadDto> GetPlatformById(int id)
+        public ActionResult<CRMReadDto> GetCRMById(int id)
         {
-            var platform = _platformRepo.GetPlatformById(id);
-            if(platform != null)
+            var CRM = _CRMRepo.GetCRMById(id);
+            if(CRM != null)
             {
-                return Ok(_mapper.Map<PlatformReadDto>(platform));
+                return Ok(_mapper.Map<CRMReadDto>(CRM));
             }
             return NotFound();
         }
 
         [HttpPost]
-        public ActionResult<PlatformReadDto> CreatePlatform(PlatformCreateDto platfrom)
+        public ActionResult<CRMReadDto> CreateCRM(CRMCreateDto platfrom)
         {
-            var p = _platformRepo.CreatePlatform(_mapper.Map<Platform>(platfrom));
-            _platformRepo.SaveChanges();
-            return CreatedAtRoute(nameof(GetPlatformById), new { Id = p.Id}, p);
+            var p = _CRMRepo.CreateCRM(_mapper.Map<CRM>(platfrom));
+            _CRMRepo.SaveChanges();
+            return CreatedAtRoute(nameof(GetCRMById), new { Id = p.Id}, p);
         }
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-namespace PlatformService.Models
+namespace CRMService.Models
 {
-    public class Platform
+    public class CRM
     {
         [Key]
         [Required]
