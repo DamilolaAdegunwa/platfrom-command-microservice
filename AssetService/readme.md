@@ -72,3 +72,6 @@ PS C:\Users\damil\source\repos\platfrom-command-microservice\AssetService> docke
  => => writing image sha256:fbc323b62b6e4c271f8e97cfe1188a2f3f53e1774e8f796f7d13b4302272d918                                                                                                                                      0.0s 
  => => naming to docker.io/damilolaadegunwa/assetservice-webapi                                                                                                                                                                   0.0s 
 PS C:\Users\damil\source\repos\platfrom-command-microservice\AssetService> 
+--------------------------------------------------------------------------------------------------------------------------------------------
+CONTAINER ID   IMAGE                                     COMMAND                  CREATED             STATUS                        PORTS                                     NAMES
+16b15d9d52a0   damilolaadegunwa/assetservice-webapi      "dotnet AssetService…"   23 minutes ago      Up 23 minutes                 0.0.0.0:10251->80/tcp, :::10251->80/tcp   first-assetservice-webapi-container
