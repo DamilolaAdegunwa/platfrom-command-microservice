@@ -48,3 +48,27 @@ kubectl delete deployment platforms-depl
 kubectl rollout restart deployment platforms-depl
 kubectl get namespace
 kubectl get storageclass 
+
+---------------------------------------------
+PS C:\Users\damil\source\repos\platfrom-command-microservice\PlatformService> docker build -t damilolaadegunwa/platformservice-webapi .
+[+] Building 195.0s (14/14) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                          0.0s
+ => => transferring dockerfile: 317B                                                                                                                                                          0.0s
+ => [internal] load .dockerignore                                                                                                                                                             0.0s
+ => => transferring context: 34B                                                                                                                                                              0.0s
+ => [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:5.0                                                                                                                          0.0s
+ => [internal] load metadata for mcr.microsoft.com/dotnet/sdk:5.0                                                                                                                             7.3s
+ => [stage-1 1/3] FROM mcr.microsoft.com/dotnet/aspnet:5.0                                                                                                                                    0.0s
+ => CACHED [stage-1 2/3] WORKDIR /app                                                                                                                                                         0.0s
+ => [build-env 1/5] FROM mcr.microsoft.com/dotnet/sdk:5.0@sha256:c05f1855774c8472961952f0b3ae5da61f3f959da77ea5f3318e39e780ccd5f3                                                             0.0s
+ => CACHED [build-env 2/5] WORKDIR /app                                                                                                                                                       0.0s
+ => [internal] load build context                                                                                                                                                             0.3s
+ => => transferring context: 308.35kB                                                                                                                                                         0.1s
+ => CACHED [build-env 3/5] COPY *.csproj ./                                                                                                                                                   0.0s
+ => [build-env 4/5] COPY . ./                                                                                                                                                                 0.1s
+ => [build-env 5/5] RUN dotnet publish -c Release -o out                                                                                                                                    187.2s
+ => CACHED [stage-1 3/3] COPY --from=build-env /app/out .                                                                                                                                     0.0s
+ => exporting to image                                                                                                                                                                        0.0s
+ => => exporting layers                                                                                                                                                                       0.0s
+ => => writing image sha256:e0151ba423afb6b7babc74b8d706678258ef9395471384f3bc9e22b42d11823c                                                                                                  0.0s
+ => => naming to docker.io/damilolaadegunwa/platformservice-webapi

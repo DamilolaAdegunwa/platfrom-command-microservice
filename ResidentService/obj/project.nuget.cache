@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lUX+MMGsoh2EGo73C+P2W/90EAQcVOYkzuhf+nCI1fhkWIY/20/8eTawdrnbNNRUcnvUTiSOozq7KpY5zUDu8A==",
+  "dgSpecHash": "selmQ+YJjZQvSmVGFY4NwtrCqavR1CJOOAcHKyQ0Sz0lvTEmzCeWH7TTb3sbVgr2oeufi9QH/3eBDU2TZVN0bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\LocationService.csproj",
+  "projectFilePath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\ResidentService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damil\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\damil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

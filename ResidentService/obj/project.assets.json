@@ -6131,9 +6131,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\LocationService.csproj",
-      "projectName": "LocationService",
-      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\LocationService.csproj",
+      "projectUniqueName": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\ResidentService.csproj",
+      "projectName": "ResidentService",
+      "projectPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\ResidentService.csproj",
       "packagesPath": "C:\\Users\\damil\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\damil\\source\\repos\\platfrom-command-microservice\\ResidentService\\obj\\",
       "projectStyle": "PackageReference",
