@@ -5,7 +5,6 @@ C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AssetService.runtimeconfig.json
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AssetService.runtimeconfig.dev.json
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AssetService.dll
-C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\ref\AssetService.dll
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AssetService.pdb
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -53,11 +52,13 @@ C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\staticwebassets\AssetService.StaticWebAssets.Manifest.cache
-C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\staticwebassets\AssetService.StaticWebAssets.xml
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\scopedcss\bundle\AssetService.styles.css
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.RazorTargetAssemblyInfo.cache
-C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.csproj.CopyComplete
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.dll
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\ref\AssetService.dll
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.pdb
 C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.genruntimeconfig.cache
+C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.csproj.AssemblyReference.cache
+C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\bin\Debug\net5.0\ref\AssetService.dll
+C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\staticwebassets\AssetService.StaticWebAssets.xml
+C:\Users\damil\source\repos\platfrom-command-microservice\AssetService\obj\Debug\net5.0\AssetService.csproj.CopyComplete

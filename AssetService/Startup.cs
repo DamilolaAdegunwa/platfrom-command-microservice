@@ -13,6 +13,10 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.EntityFrameworkCore;
 using AssetService.Data;
+using Microsoft.AspNetCore.Http;
+using System.Threading;
+using AssetService.Models;
+using System.IO;
 
 namespace AssetService
 {
@@ -51,9 +55,48 @@ namespace AssetService
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.
+                //endpoints.MapGet("/test",(ctx) => Task.FromResult("app is running"));
+                CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+
+                //endpoints.MapGet("/hello/{name:alpha}", async context =>
+                //{
+                //    var name = context.Request.RouteValues["name"];
+                //    await context.Response.WriteAsJsonAsync(new { message = $"Hello {name}!" }, cancellationTokenSource.Token);
+                //});
+                var assets = new List<Asset>() { 
+                    new Asset { Id = 1, Name = "prince of persia game", Cost = "$9.99", Publisher = "Persia Game Studio"},
+                    new Asset { Id = 2, Name = "Mortal Kombat game", Cost = "$2.99", Publisher  = "MK Studio"},
+                    new Asset { Id = 3, Name = "Warrior Within game", Cost = "$3.99", Publisher  = "MK Studio"},
+                    new Asset { Id = 4, Name = "Dark Side game", Cost  = "$1.99", Publisher = "Ninja Gaming Studio"}
+                };
+
+                endpoints.MapGet("/", async context => {
+                    await context.Response.WriteAsJsonAsync(assets);
+                    //await context.Response.WriteAsync(Newtonsoft.Json.JsonConvert.SerializeObject(assets));
+                });
+
+                endpoints.MapPost("/", async context => {
+                    using(var ms = new MemoryStream())
+                    {
+                        
+                        context.Response.Body.CopyTo(ms);
+                        ms.Seek(0, SeekOrigin.Begin);
+                        var x = Newtonsoft.Json.JsonConvert.SerializeObject(ms);
+                        StreamReader reader = new StreamReader(ms);
+                        var line = "";
+                        var allLines = "";
+                        while((line = reader.ReadLine()) != null)
+                        {
+                            allLines += line;
+                        }
+                        await context.Response.WriteAsJsonAsync(assets);
+                        var assetObject = Newtonsoft.Json.JsonConvert.DeserializeObject<Asset>(allLines);
+                    }
+                });
                 endpoints.MapControllers();
             });
             PrepDb.PrePopulation(app);

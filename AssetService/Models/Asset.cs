@@ -18,3 +18,4 @@ namespace AssetService.Models
         public string Cost { get; set; }
     }
 }
+//software assets
